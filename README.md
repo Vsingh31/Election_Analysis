@@ -15,46 +15,47 @@ In this project,I will figure out the voter trunout for each county,the percenta
 -**Add to the total vote count**
 -total_votes = total_votes + 1
       
-*Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
 
-for county_name in county_votes:  
+**I wrote code to get number of votes and the percentage of the total votes for each county.For Jefferson county,number of votes were 38,855 and the percentage of the total votes were 10.5%.For Denver County,number of votes were 306,055 and the percentage of the total votes were 82.8%.For Alapahoe County,number of votes were 24,801 and the percentage of the total votes were 6.7%.**
+  for county_name in county_votes:  
     **Retrieve vote count and percentage.**
-    votes = county_votes[county_name]
-    **print(candidate_name)**
+    votes = county_votes[county_name] 
     vote_percentage = float(votes) / float(total_votes) * 100
     **Print each candidate, their voter count, and percentage to the terminal.**
     county_percentage_vote = (f"{county_name}: {vote_percentage:.1f}% ({votes:,})\n")
     print(f"{county_name}: {vote_percentage:.1f}% ({votes:,})\n")
-    county_results = county_results + county_percentage_vote  
+    county_results = county_results + county_percentage_vote 
     
-* Which county had the largest number of votes?
+    
+* **Denver county had the largest number of votes.**
    if  vote_percentage > temp :
       temp = vote_percentage
       cname = county_name
         # Print the winning candidates' results to the terminal.
-winning_county_summary = (
+   winning_county_summary = (
     f"-------------------------\n"
     f"Largest County Turnout: {cname}\n"
     f"-------------------------\n")
-print(winning_county_summary)
+  print(winning_county_summary)
 
 * Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
-   for candidate_name in candidate_votes:
-    # Retrieve vote count and percentage.
+* **I wrote code to get number of votes and the percentage of the total votes for each candidate.**Charles Casper Stockham candidate** received 85,213 votes and the percentage of the total votes were 23.0%. **Diana DeGette candidate** received 272,892 votes and the percentage of the total votes were 73.8%.**Raymon Anthony Doane** received 11,606 votes and the percentage of the total votes were 3.1%.
+* for candidate_name in candidate_votes:
+    **Retrieve vote count and percentage.**
     votes = candidate_votes[candidate_name]
-    #print(candidate_name)
     vote_percentage = float(votes) / float(total_votes1) * 100
-    # Print each candidate, their voter count, and percentage to the terminal.
-    # candidate_temp = (f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
-    #print(f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
+    **Print each candidate, their voter count, and percentage to the terminal.**
+    print(f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
     candidate_results = candidate_results + (f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
-* Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
-   # Determine winning vote count, winning percentage, and candidate.
+    
+    
+* **Diana DeGette** candidate won the election,Her vote count was 272,892 , her percentage of the total votes was 73.8%.
+**code for winning candidate,winning vote count,and winning percentage.**
     if (votes > winning_count) and (vote_percentage > winning_percentage):
         winning_count = votes
         winning_candidate = candidate_name
         winning_percentage = vote_percentage
-# Print the winning candidates' results to the terminal.
+   **The winning candidates' results to the terminal.**
 winning_candidate_summary = (
     f"-------------------------\n"
     f"Winner: {winning_candidate}\n"
@@ -64,6 +65,15 @@ winning_candidate_summary = (
 print(candidate_results) 
 print(winning_candidate_summary)
 
+
+**Results on Command Line**
+
+![commandline_results](https://user-images.githubusercontent.com/90277142/135737673-ad8e6b26-da57-4d27-93da-58b9a0e8f413.png)
+
+
+**Results On Text File(election_analysis.txt**
+
+![textfile](https://user-images.githubusercontent.com/90277142/135737678-c388b831-70e8-4d7f-9f8e-3019e211cd7d.png)
 
 
 
