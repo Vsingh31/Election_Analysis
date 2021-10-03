@@ -90,7 +90,7 @@ for example : my file path is "analysis", "election_analysis.txt".I am proving c
 file_to_save = os.path.join("analysis", "election_analysis.txt")
 
 
-* He can also load any csv file just change my path and put his csv file path and load the data and get the  result even in his file there are 5 or 6 different candidates.
+* He can also load any csv file just change my path and put his csv file path and load the data and get the  result even in his file there are more different candidates.
  My file path is "Resources", "election_results.csv". Here my folder name is Resources and my csv file is inside of this folder. so I can load this file to work on and get result.I am proving code where I **Assign a variable to load a file from a path.** my code is this:-
 file_to_load = os.path.join("Resources", "election_results.csv")
 
