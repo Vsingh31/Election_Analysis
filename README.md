@@ -16,7 +16,7 @@ In this project,I will figure out the voter trunout for each county,the percenta
 -total_votes = total_votes + 1
       
 
-**I wrote code to get number of votes and the percentage of the total votes for each county.For Jefferson county,number of votes were 38,855 and the percentage of the total votes were 10.5%.For Denver County,number of votes were 306,055 and the percentage of the total votes were 82.8%.For Alapahoe County,number of votes were 24,801 and the percentage of the total votes were 6.7%.**
+* For **Jefferson county**,number of votes were **38,855** and the percentage of the total votes were **10.5%**.For **Denver County**,number of votes were **306,055** and the    percentage of the total votes were **82.8%**.For **Alapahoe County**,number of votes were **24,801** and the percentage of the total votes were **6.7%**. I wrote code to get number of votes and the percentage of the total votes for each county.
   for county_name in county_votes:  
     **Retrieve vote count and percentage.**
     votes = county_votes[county_name] 
@@ -38,9 +38,9 @@ In this project,I will figure out the voter trunout for each county,the percenta
     f"-------------------------\n")
   print(winning_county_summary)
 
-* Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
-* **I wrote code to get number of votes and the percentage of the total votes for each candidate.**Charles Casper Stockham candidate** received 85,213 votes and the percentage of the total votes were 23.0%. **Diana DeGette candidate** received 272,892 votes and the percentage of the total votes were 73.8%.**Raymon Anthony Doane** received 11,606 votes and the percentage of the total votes were 3.1%.
-* for candidate_name in candidate_votes:
+
+* **Charles Casper Stockham candidate** received 85,213 votes and the percentage of the total votes were 23.0%. **Diana DeGette candidate** received 272,892 votes and the percentage of the total votes were 73.8%.**Raymon Anthony Doane** received 11,606 votes and the percentage of the total votes were 3.1%.I wrote code to get number of votes and the percentage of the total votes for each candidate.
+  for candidate_name in candidate_votes:
     **Retrieve vote count and percentage.**
     votes = candidate_votes[candidate_name]
     vote_percentage = float(votes) / float(total_votes1) * 100
@@ -49,8 +49,8 @@ In this project,I will figure out the voter trunout for each county,the percenta
     candidate_results = candidate_results + (f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
     
     
-* **Diana DeGette** candidate won the election,Her vote count was 272,892 , her percentage of the total votes was 73.8%.
-**code for winning candidate,winning vote count,and winning percentage.**
+* **Diana DeGette** candidate won the election,Her vote count was **272,892** , her percentage of the total votes was **73.8%**.
+   **code for winning candidate,winning vote count,and winning percentage.**
     if (votes > winning_count) and (vote_percentage > winning_percentage):
         winning_count = votes
         winning_candidate = candidate_name
