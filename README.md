@@ -91,7 +91,7 @@ file_to_load = os.path.join("Resources", "election_results.csv")
 **Assign a variable to save the file to a path.**
 file_to_save = os.path.join("analysis", "election_analysis.txt")
 
-*
+* if candidates party or candidate DOB or any other additional field can be incorporated with minor changes in the codes.
 
 
 In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other elections.
