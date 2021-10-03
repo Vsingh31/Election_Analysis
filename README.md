@@ -85,18 +85,13 @@ print(winning_candidate_summary)
 
 
 #### Election-Audit Summary
-* With the help of this script,election commission can get results of election on test file.He have to change little bit in this script.he have to change the file path that i gave and put his file path to calculate the results according to county name or candidate name.
-for examole : my file path is "Resources", "election_results.csv".I am proving code where I **Assign a variable to load a file from a path.**
-file_to_load = os.path.join("Resources", "election_results.csv")
-**Assign a variable to save the file to a path.**
+* With the help of this script,election commission can get results of election on his test file.He have to change little bit in my script,change the my file path and put his file path to calculate the results according to county name or candidate name.
+for example : my file path is "analysis", "election_analysis.txt".I am proving code where I **Assign a variable to save the file to a path.** Here my folder name is analysis and i am saving my data in election_analysis.txt file.so,He have to just change the my folder_name with his folder name and put the his file name with .txt extention to save his result. 
 file_to_save = os.path.join("analysis", "election_analysis.txt")
 
 
-* In case,if any election has multiple candidates with same name, additional field like party_affiliation can be used to identify the candidates distictively. The code change to incorporate the additional field will be simple and straight forward in the script (PyPoll_challenge.py). Assuming that a new field "Party name" comes in csv file,following changes can be applied to handle that.
+* He can also load any csv file just change my path and put his csv file path and load the data and get the  result even in his file there are 5 or 6 different candidates.
+ My file path is "Resources", "election_results.csv". Here my folder name is Resources and my csv file is inside of this folder. so I can load this file to work on and get result.I am proving code where I **Assign a variable to load a file from a path.** my code is this:
+file_to_load = os.path.join("Resources", "election_results.csv")
 
-* if candidates party or candidate DOB or any other additional field can be incorporated with minor changes in the codes.
 
-
-In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. Give at least two examples of how this script can be modified to be used for other elections.
-
-There is a statement to the election commission that explores how this script can be used for any election, with two examples for modifying the script. (4 pt)
