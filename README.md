@@ -4,7 +4,7 @@ In this project,I will figure out the voter trunout for each county,the percenta
 
 ### Election-Audit Results
 
-1  In this congressional election  **369,711** votes were cast.for getting total_votes i used this code.
+*  In this congressional election  **369,711** votes were cast.for getting total_votes i used this code.
 -**with open() function I opened my file and get data and put  it in election_data variable.then i read the election_data with csv module reader() function and put it in            file_reader variable.**
 -with open(file_to_load) as election_data:
 -file_reader = csv.reader(election_data)
