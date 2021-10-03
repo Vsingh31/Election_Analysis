@@ -91,6 +91,9 @@ file_to_load = os.path.join("Resources", "election_results.csv")
 **Assign a variable to save the file to a path.**
 file_to_save = os.path.join("analysis", "election_analysis.txt")
 
+
+* In case,if any election has multiple candidates with same name, additional field like party_affiliation can be used to identify the candidates distictively. The code change to incorporate the additional field will be simple and straight forward in the script (PyPoll_challenge.py). Assuming that a new field "Party name" comes in csv file,following changes can be applied to handle that.
+
 * if candidates party or candidate DOB or any other additional field can be incorporated with minor changes in the codes.
 
 
